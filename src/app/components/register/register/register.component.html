@@ -1,0 +1,21 @@
+      <h1>User Registration</h1>
+      <form [formGroup]="registerForm" (ngSubmit)="setRegisterForm()">
+
+        <label>Name</label>
+        <input matInput formControlName="name">
+
+        <label>Surname</label>
+        <input matInput formControlName="name">
+
+        <label>Tel</label>
+        <input matInput formControlName="name">
+
+        <label>Email</label>
+        <input matInput formControlName="email">
+
+        <label>Password</label>
+        <input matInput formControlName="password">
+
+        <button mat-raised-button color="primary">Submit</button>
+          <a routerLink="/" mat-raised-button color="accent">Back to home</a>
+      </form>
