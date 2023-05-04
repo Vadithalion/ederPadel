@@ -1,21 +1,21 @@
       <h1>User Registration</h1>
       <form [formGroup]="registerForm" (ngSubmit)="setRegisterForm()">
 
-        <label>Name</label>
+        <label>Nombre</label>
         <input formControlName="name">
 
-        <label>Surname</label>
-        <input formControlName="name">
+        <label>Apellidos</label>
+        <input formControlName="surname">
 
-        <label>Tel</label>
+        <label>Teléfono</label>
         <input formControlName="name">
 
         <label>Email</label>
         <input formControlName="email">
 
-        <label>Password</label>
+        <label>Contraseña</label>
         <input formControlName="password">
 
-        <button>Submit</button>
-          <a routerLink="/">Back to home</a>
+        <button>Enviar</button>
+          <a routerLink="/">Volver al inicio</a>
       </form>

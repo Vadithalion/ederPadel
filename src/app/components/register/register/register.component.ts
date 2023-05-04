@@ -11,9 +11,9 @@ export class RegisterComponent {
 
   public registerForm = new FormGroup({
     name: new FormControl(null, Validators.required),
-    Surname: new FormControl,
-    Tel: new FormControl,
-    Email: new FormControl(null, Validators.required),
+    surname: new FormControl,
+    tel: new FormControl,
+    email: new FormControl(null, Validators.required),
     password: new FormControl(null, Validators.required),
 
   });
@@ -23,7 +23,7 @@ export class RegisterComponent {
   }
 
   public setRegisterForm() {
-    alert('porque tocas?');
+    // iñi - el alert te devuelve lo que hayas puesto en el cuadro del nombre
+    alert(this.registerForm.get('name')?.value)
   }
-
 }
