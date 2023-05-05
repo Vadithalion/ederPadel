@@ -1,21 +1,28 @@
-      <h1>User Registration</h1>
-      <form [formGroup]="registerForm" (ngSubmit)="setRegisterForm()">
-
-        <label>Nombre</label>
-        <input formControlName="name">
-
-        <label>Apellidos</label>
-        <input formControlName="surname">
-
-        <label>Teléfono</label>
-        <input formControlName="name">
-
-        <label>Email</label>
-        <input formControlName="email">
-
-        <label>Contraseña</label>
-        <input formControlName="password">
-
-        <button>Enviar</button>
-          <a routerLink="/">Volver al inicio</a>
-      </form>
+      <body>
+        <main>
+          <article class="content">
+            <h1> Registro de usuario </h1>
+            <form [formGroup]="registerForm" (ngSubmit)="setRegisterForm()">
+      
+              <label>Nombre</label>
+              <input formControlName="name">
+      
+              <label>Apellidos</label>
+              <input formControlName="surname">
+      
+              <label>Teléfono</label>
+              <input formControlName="name">
+      
+              <label>Email</label>
+              <input formControlName="email">
+      
+              <label>Contraseña</label>
+              <input formControlName="password">
+      
+              <button>Enviar</button>
+                <a routerLink="/">Volver al inicio</a>
+            </form>
+          </article>
+        </main>
+      </body>
+      
