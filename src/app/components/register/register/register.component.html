@@ -5,19 +5,19 @@
             <form [formGroup]="registerForm" (ngSubmit)="setRegisterForm()">
       
               <label>Nombre</label>
-              <input formControlName="name">
+              <input formControlName="name" placeholder="Introduce nombre">
       
               <label>Apellidos</label>
-              <input formControlName="surname">
+              <input formControlName="surname" placeholder="Introduce apellidos">
       
               <label>Teléfono</label>
-              <input formControlName="name">
+              <input formControlName="name" placeholder="Introduce apellidos">
       
               <label>Email</label>
-              <input formControlName="email">
+              <input formControlName="email" placeholder="Introduce email">
       
               <label>Contraseña</label>
-              <input formControlName="password">
+              <input formControlName="password" placeholder="Introduce contraseña">
       
               <button>Enviar</button>
                 <a routerLink="/">Volver al inicio</a>
