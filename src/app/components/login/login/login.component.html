@@ -1,0 +1,11 @@
+<h1>Entra</h1>
+<form [formGroup]="loginForm" (ngSubmit)="setLoginForm()">
+  <label>Email</label>
+  <input formControlName="email">
+
+  <label>Contraseña</label>
+  <input formControlName="password">
+
+  <button>Enviar</button>
+    <a routerLink="/">Volver al inicio</a>
+</form>
